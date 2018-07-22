@@ -31,4 +31,4 @@ const styles = {
 		fontWeight: 'bold',
 	}
 };
-export default Header;
+export { Header };
