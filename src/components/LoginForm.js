@@ -5,7 +5,8 @@ import { TextInput } from 'react-native';
 import {
 	Button,
 	Card,
-	CardSection
+	CardSection,
+	Input
 } from './common';
 
 class LoginForm extends Component {
@@ -18,11 +19,12 @@ class LoginForm extends Component {
 		return (
 			<Card>
 				<CardSection>
+					<
 					// Whenever user enters value for textinput,
 					// we're saving what the user input into value.
 					// When the textinput component is rerendered, it
 					// uses its value property to show the text. Text exists
-					// as part of state. 
+					// as part of state.
 					<TextInput
 						value={this.state.text}
 						onChangeText={text => this.setState({ text })}
